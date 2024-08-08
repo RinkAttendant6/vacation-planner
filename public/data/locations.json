@@ -1,0 +1,162 @@
+[
+  {
+    "location": "Abbotsford, British Columbia",
+    "team": "Abbotsford Canucks",
+    "country": "Canada"
+  },
+  {
+    "location": "Utica, New York",
+    "team": "Utica Comets",
+    "country": "USA"
+  },
+  {
+    "location": "Rosemont, Illinois",
+    "team": "Chicago Wolves",
+    "country": "USA"
+  },
+  {
+    "location": "Thousand Palms, California",
+    "team": "Coachella Valley Firebirds",
+    "country": "USA"
+  },
+  {
+    "location": "Providence, Rhode Island",
+    "team": "Providence Bruins",
+    "country": "USA"
+  },
+  {
+    "location": "Loveland, Colorado",
+    "team": "Colorado Eagles",
+    "country": "USA"
+  },
+  {
+    "location": "Rochester, New York",
+    "team": "Rochester Americans",
+    "country": "USA"
+  },
+  {
+    "location": "Rockford, Illinois",
+    "team": "Rockford IceHogs",
+    "country": "USA"
+  },
+  {
+    "location": "Charlotte, North Carolina",
+    "team": "Charlotte Checkers",
+    "country": "USA"
+  },
+  {
+    "location": "Belleville, Ontario",
+    "team": "Belleville Senators",
+    "country": "Canada"
+  },
+  {
+    "location": "Winnipeg, Manitoba",
+    "team": "Manitoba Moose",
+    "country": "Canada"
+  },
+  {
+    "location": "Toronto, Ontario",
+    "team": "Toronto Marlies",
+    "country": "Canada"
+  },
+  {
+    "location": "Hershey, Pennsylvania",
+    "team": "Hershey Bears",
+    "country": "USA"
+  },
+  {
+    "location": "Cedar Park, Texas",
+    "team": "Texas Stars",
+    "country": "USA"
+  },
+  {
+    "location": "Henderson, Nevada",
+    "team": "Henderson Silver Knights",
+    "country": "USA"
+  },
+  {
+    "location": "Springfield, Massachusetts",
+    "team": "Springfield Thunderbirds",
+    "country": "USA"
+  },
+  {
+    "location": "Bakersfield, California",
+    "team": "Bakersfield Condors",
+    "country": "USA"
+  },
+  {
+    "location": "Wilkes-Barre, Pennsylvania",
+    "team": "Wilkes-Barre/Scranton Penguins",
+    "country": "USA"
+  },
+  {
+    "location": "San Diego, California",
+    "team": "San Diego Gulls",
+    "country": "USA"
+  },
+  {
+    "location": "Laval, Quebec",
+    "team": "Laval Rocket",
+    "country": "Canada"
+  },
+  {
+    "location": "Allentown, Pennsylvania",
+    "team": "Lehigh Valley Phantoms",
+    "country": "USA"
+  },
+  {
+    "location": "Cleveland, Ohio",
+    "team": "Cleveland Monsters",
+    "country": "USA"
+  },
+  {
+    "location": "San Jose, California",
+    "team": "San Jose Barracuda",
+    "country": "USA"
+  },
+  {
+    "location": "Calgary, Alberta",
+    "team": "Calgary Wranglers",
+    "country": "Canada"
+  },
+  {
+    "location": "Bridgeport, Connecticut",
+    "team": "Bridgeport Islanders",
+    "country": "USA"
+  },
+  {
+    "location": "Ontario, California",
+    "team": "Ontario Reign",
+    "country": "USA"
+  },
+  {
+    "location": "Tucson, Arizona",
+    "team": "Tucson Roadrunners",
+    "country": "USA"
+  },
+  {
+    "location": "Syracuse, New York",
+    "team": "Syracuse Crunch",
+    "country": "USA"
+  },
+  {
+    "location": "Milwaukee, Wisconsin",
+    "team": "Milwaukee Admirals",
+    "country": "USA"
+  },
+  {
+    "location": "Grand Rapids, Michigan",
+    "team": "Grand Rapids Griffins",
+    "country": "USA"
+  },
+  {
+    "location": "Des Moines, Iowa",
+    "team": "Iowa Wild",
+    "country": "USA"
+  },
+  {
+    "location": "Hartford, Connecticut",
+    "team": "Hartford Wolf Pack",
+    "country": "USA"
+  }
+]

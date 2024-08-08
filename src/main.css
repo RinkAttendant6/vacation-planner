@@ -1,0 +1,20 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+}
+
+tr.optimal {
+    background: var(--bg-success) !important;
+}
+
+tr.suboptimal {
+    background: var(--bg-attention) !important;
+}
+
+label:has(#showOptimalOnly:checked)+table tr.suboptimal {
+    display: none;
+}

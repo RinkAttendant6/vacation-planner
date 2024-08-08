@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <meta charset="UTF-8" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' 'unsafe-inline'"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vince's Vacation Planner</title>
+  <main>
+    <h1>Vince's Vacation Planner <small>(BETA)</small></h1>
+    <p>
+      This tool assists you in determining the optimal dates for your vacation
+      by maximizing the number of exciting days in a given duration.
+    </p>
+
+    <noscript>
+      <p class="flash foreground danger">
+        You must enable JavaScript to use this tool.
+      </p>
+    </noscript>
+
+    <p>
+      NOTE: Your browser must support the amazing
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <code>Object.groupBy</code>
+      </a>
+      function to use this tool. This means Chrome/Edge 117+, Firefox 119+, or
+      Opera 103+.
+    </p>
+
+    <h2>Where and how long</h2>
+    <form method="get">
+      <p>
+        <label>
+          Destination
+          <select name="destination" id="destination" required autofocus>
+            <option value="" selected>Select a city</option>
+            <optgroup label="Canada"></optgroup>
+            <optgroup label="USA"></optgroup>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>
+          Duration (number of calendar days)
+          <small
+            >If undecided, enter 0 to compute all ranges between 2 to 15
+            days.</small
+          >
+          <input
+            type="number"
+            min="0"
+            max="15"
+            name="duration"
+            required
+            value="5"
+          />
+        </label>
+      </p>
+
+      <button type="submit">Compute optimal ranges</button>
+    </form>
+
+    <section>
+      <h2>Output</h2>
+
+      <h3>Caveats</h3>
+      <ul class="small">
+        <li>
+          Departure date: Exciting days taking place on your departure date are
+          considered in range, however you should confirm your travel plans to
+          verify whether or not you will be able to attend the exciting event
+          based on your arrival time.
+        </li>
+        <li>
+          Return date: Exciting days taking place on your return date are
+          <em>not</em> considered in range, as it is assumed that you will be
+          travelling on that date rather than taking part in exciting events.
+        </li>
+        <li>
+          <strong>
+            All computations are based on Eastern Time regardless of destination
+            city.
+          </strong>
+        </li>
+      </ul>
+
+      <div id="oneDayOutput" hidden>
+        <p id="summaryOutput"></p>
+
+        <label>
+          <input type="checkbox" id="showOptimalOnly" checked />
+          Only show optimal ranges (uncheck to show all)
+        </label>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Depart</th>
+              <th scope="col">Return</th>
+              <th scope="col">Exciting days</th>
+              <th scope="col">Optimal?</th>
+            </tr>
+          </thead>
+          <tbody id="detailedOutput"></tbody>
+        </table>
+      </div>
+
+      <div id="allDaysOutput" hidden>
+        <pre id="rawOutput"></pre>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</html>
