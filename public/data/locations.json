@@ -2,161 +2,385 @@
   {
     "location": "Abbotsford, British Columbia",
     "team": "Abbotsford Canucks",
-    "country": "Canada"
+    "country": "Canada",
+    "classification": "A"
   },
   {
     "location": "Utica, New York",
     "team": "Utica Comets",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Rosemont, Illinois",
     "team": "Chicago Wolves",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Thousand Palms, California",
     "team": "Coachella Valley Firebirds",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Providence, Rhode Island",
     "team": "Providence Bruins",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Loveland, Colorado",
     "team": "Colorado Eagles",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Rochester, New York",
     "team": "Rochester Americans",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Rockford, Illinois",
     "team": "Rockford IceHogs",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Charlotte, North Carolina",
     "team": "Charlotte Checkers",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Belleville, Ontario",
     "team": "Belleville Senators",
-    "country": "Canada"
+    "country": "Canada",
+    "classification": "A"
   },
   {
     "location": "Winnipeg, Manitoba",
     "team": "Manitoba Moose",
-    "country": "Canada"
+    "country": "Canada",
+    "classification": "A"
   },
   {
     "location": "Toronto, Ontario",
     "team": "Toronto Marlies",
-    "country": "Canada"
+    "country": "Canada",
+    "classification": "A"
   },
   {
     "location": "Hershey, Pennsylvania",
     "team": "Hershey Bears",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Cedar Park, Texas",
     "team": "Texas Stars",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Henderson, Nevada",
     "team": "Henderson Silver Knights",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Springfield, Massachusetts",
     "team": "Springfield Thunderbirds",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Bakersfield, California",
     "team": "Bakersfield Condors",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Wilkes-Barre, Pennsylvania",
     "team": "Wilkes-Barre/Scranton Penguins",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "San Diego, California",
     "team": "San Diego Gulls",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Laval, Quebec",
     "team": "Laval Rocket",
-    "country": "Canada"
+    "country": "Canada",
+    "classification": "A"
   },
   {
     "location": "Allentown, Pennsylvania",
     "team": "Lehigh Valley Phantoms",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Cleveland, Ohio",
     "team": "Cleveland Monsters",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "San Jose, California",
     "team": "San Jose Barracuda",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Calgary, Alberta",
     "team": "Calgary Wranglers",
-    "country": "Canada"
+    "country": "Canada",
+    "classification": "A"
   },
   {
     "location": "Bridgeport, Connecticut",
     "team": "Bridgeport Islanders",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Ontario, California",
     "team": "Ontario Reign",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Tucson, Arizona",
     "team": "Tucson Roadrunners",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Syracuse, New York",
     "team": "Syracuse Crunch",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Milwaukee, Wisconsin",
     "team": "Milwaukee Admirals",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Grand Rapids, Michigan",
     "team": "Grand Rapids Griffins",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Des Moines, Iowa",
     "team": "Iowa Wild",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
   },
   {
     "location": "Hartford, Connecticut",
     "team": "Hartford Wolf Pack",
-    "country": "USA"
+    "country": "USA",
+    "classification": "A"
+  },
+  {
+    "location": "Tampa, Florida",
+    "team": "Tampa Bay Lightning",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Sunrise, Florida",
+    "team": "Florida Panthers",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Dallas, Texas",
+    "team": "Dallas Stars",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Denver, Colorado",
+    "team": "Colorado Avalanche",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Montreal, Quebec",
+    "team": "Montreal Canadiens",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "Nashville, Tennessee",
+    "team": "Nashville Predators",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Winnipeg, Manitoba",
+    "team": "Winnipeg Jets",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "Ottawa, Ontario",
+    "team": "Ottawa Senators",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "Washington, D.C.",
+    "team": "Washington Capitals",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Seattle, Washington",
+    "team": "Seattle Kraken",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Los Angeles, California",
+    "team": "Los Angeles Kings",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Salt Lake City, Utah",
+    "team": "Utah Hockey Club",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "St. Louis, Missouri",
+    "team": "St. Louis Blues",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Anaheim, California",
+    "team": "Anaheim Ducks",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Buffalo, New York",
+    "team": "Buffalo Sabres",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Detroit, Michigan",
+    "team": "Detroit Red Wings",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "New York City, New York",
+    "team": "New York Rangers",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Columbus, Ohio",
+    "team": "Columbus Blue Jackets",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Raleigh, North Carolina",
+    "team": "Carolina Hurricanes",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Pittsburgh, Pennsylvania",
+    "team": "Pittsburgh Penguins",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Newark, New Jersey",
+    "team": "New Jersey Devils",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Vancouver, British Columbia",
+    "team": "Vancouver Canucks",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "Edmonton, Alberta",
+    "team": "Edmonton Oilers",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "San Jose, California",
+    "team": "San Jose Sharks",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Toronto, Ontario",
+    "team": "Toronto Maple Leafs",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "Calgary, Alberta",
+    "team": "Calgary Flames",
+    "country": "Canada",
+    "classification": "B"
+  },
+  {
+    "location": "Boston, Massachusetts",
+    "team": "Boston Bruins",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Paradise, Nevada",
+    "team": "Vegas Golden Knights",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Elmont, New York",
+    "team": "New York Islanders",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Chicago, Illinois",
+    "team": "Chicago Blackhawks",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Philadelphia, Pennsylvania",
+    "team": "Philadelphia Flyers",
+    "country": "USA",
+    "classification": "B"
+  },
+  {
+    "location": "Saint Paul, Minnesota",
+    "team": "Minnesota Wild",
+    "country": "USA",
+    "classification": "B"
   }
 ]

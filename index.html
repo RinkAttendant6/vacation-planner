@@ -3,9 +3,15 @@
   <meta charset="UTF-8" />
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; style-src 'self' 'unsafe-inline'"
+    content="default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.googleapis.com fonts.gstatic.com"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+    rel="stylesheet"
+  />
   <title>Vince's Vacation Planner</title>
   <main>
     <h1>Vince's Vacation Planner <small>(BETA)</small></h1>
@@ -33,18 +39,27 @@
       Opera 103+.
     </p>
 
-    <h2>Where and how long</h2>
     <form method="get">
-      <p>
-        <label>
-          Destination
-          <select name="destination" id="destination" required autofocus>
-            <option value="" selected>Select a city</option>
-            <optgroup label="Canada"></optgroup>
-            <optgroup label="USA"></optgroup>
-          </select>
-        </label>
-      </p>
+      <fieldset>
+        <legend>Destination</legend>
+
+        <div role="group">
+          <p>
+            <i class="noto-color-emoji-regular">💸</i>
+            Cities with more affordable exciting events:
+          </p>
+
+          <ul class="destinations pl-0" id="destinations-group-a"></ul>
+        </div>
+        <div role="group">
+          <p>
+            <i class="noto-color-emoji-regular">💰</i>
+            Cities with less affordable exciting events:
+          </p>
+
+          <ul class="destinations pl-0" id="destinations-group-b"></ul>
+        </div>
+      </fieldset>
       <p>
         <label>
           Duration (number of calendar days)

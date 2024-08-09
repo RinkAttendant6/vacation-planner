@@ -7,38 +7,79 @@ import { add, set, isWithinInterval } from "date-fns";
 // set up location stuff
 
 const locations = await ky.get("data/locations.json").json();
-const locationsByCountry = Object.groupBy(locations, ({ country }) => country);
-
-const destinationEl = document.getElementById("destination");
-
-destinationEl.querySelectorAll("optgroup").forEach((el) => el.remove());
-destinationEl.append(
-  ...Object.entries(locationsByCountry).map(([country, cities]) => {
-    const optionEls = cities
-      .sort((a, b) => a.location.localeCompare(b.location))
-      .map((city) => {
-        const optionEl = document.createElement("option");
-        optionEl.value = city.team;
-        optionEl.textContent = city.location;
-
-        return optionEl;
-      });
-
-    const optgroupEl = document.createElement("optgroup");
-    optgroupEl.label = country;
-    optgroupEl.append(...optionEls);
-
-    return optgroupEl;
-  })
+const locationsByClassification = Object.groupBy(
+  locations,
+  ({ classification }) => classification
 );
+
+const generateLocationInputs = (cities) => {
+  return cities.map((city) => {
+    const inputEl = document.createElement("input");
+    inputEl.type = "radio";
+    inputEl.name = "destination";
+    inputEl.value = city.team;
+    inputEl.required = true;
+
+    const flagEl = document.createElement("i");
+    flagEl.classList.add("noto-color-emoji-regular", "px-.5");
+    if (city.country === "Canada") {
+      flagEl.textContent = "🇨🇦";
+    } else {
+      flagEl.textContent = "🇺🇸";
+    }
+
+    const labelEl = document.createElement("label");
+    labelEl.textContent = city.location;
+    labelEl.insertAdjacentElement("afterbegin", flagEl);
+    labelEl.insertAdjacentElement("afterbegin", inputEl);
+
+    const listEl = document.createElement("li");
+    listEl.append(labelEl);
+
+    return listEl;
+  });
+};
+
+document
+  .getElementById("destinations-group-a")
+  .append(
+    ...generateLocationInputs(
+      Object.values(locationsByClassification.A).sort(
+        (a, b) =>
+          a.country.localeCompare(b.country) ||
+          a.location.localeCompare(b.location)
+      )
+    )
+  );
+
+document
+  .getElementById("destinations-group-b")
+  .append(
+    ...generateLocationInputs(
+      Object.values(locationsByClassification.B).sort(
+        (a, b) =>
+          a.country.localeCompare(b.country) ||
+          a.location.localeCompare(b.location)
+      )
+    )
+  );
 
 // ical stuff
 
-const calData = ICAL.parse(await ky.get("data/all.ics").text());
-const allEvents = new ICAL.Component(calData)
-  .getAllSubcomponents("vevent")
-  .map((component) => new ICAL.Event(component))
-  .sort((a, b) => a.startDate.toJSDate() - b.startDate.toJSDate());
+const calFiles = ["data/2024-2025_a.ics", "data/2024-2025_b.ics"];
+const allEvents = (
+  await Promise.all(
+    calFiles.map(async (file) => {
+      const calData = ICAL.parse(await ky.get(file).text());
+      return new ICAL.Component(calData)
+        .getAllSubcomponents("vevent")
+        .map((component) => new ICAL.Event(component))
+        .sort((a, b) => a.startDate.toJSDate() - b.startDate.toJSDate());
+    })
+  )
+)
+  .flat()
+  .filter((event) => event.summary.includes("@"));
 
 const allEventsByTeam = Object.groupBy(allEvents, (event) =>
   event.summary.split("@")[1].trim()
