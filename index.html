@@ -3,7 +3,7 @@
   <meta charset="UTF-8" />
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:"
+    content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.googleapis.com fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.webstatus.dev"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +12,25 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
     rel="stylesheet"
   />
+  <style>
+    baseline-status {
+      float: right;
+      max-width: 50%;
+      margin-inline-start: 0.5em;
+    }
+
+    .browser-compat {
+      margin-block-end: 0.5em;
+    }
+
+    .browser-compat::after {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+  </style>
   <title>Vince's Vacation Planner</title>
+  <script src="https://cdn.jsdelivr.net/npm/baseline-status@1.0/baseline-status.min.js" type="module"></script>
   <main>
     <h1>Vince's Vacation Planner <small>(BETA)</small></h1>
     <p>
@@ -26,6 +44,9 @@
       </p>
     </noscript>
 
+    <div class="browser-compat">
+    <baseline-status featureId="array-group"></baseline-status>
+
     <p>
       NOTE: Your browser must support the amazing
       <a
@@ -38,6 +59,7 @@
       function to use this tool. This means Chrome/Edge 117+, Firefox 119+, or
       Opera 103+.
     </p>
+  </div>
 
     <form method="get">
       <fieldset>
